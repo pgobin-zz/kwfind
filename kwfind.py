@@ -10,13 +10,12 @@ Example:
 '''
 
 import pkgutil
+import sys
+import re
 
 # Abort module load if missing dependencies
 if pkgutil.find_loader('tqdm') is None:
     sys.exit('Package "tqdm" not installed.\nRun:\t$ pip install tqdm')
-
-import sys
-import re
 
 from os import path, walk
 from tqdm import tqdm
