@@ -58,7 +58,7 @@ def kwfind(root_dir, keyword):
                 counts[key] = counts.get(root, 0) + 1
 
     # Print human-readable counts
-    print("{} found".format(len(counts)))
+    print('{} found'.format(len(counts)))
     for x in counts:
         print('{0}: {1}'.format(x, counts[x]))
 
